@@ -49,7 +49,7 @@ include('includes/config.php');
 
 
 	
-	<h3>Package List</h3>
+	<h3>Attractions</h3>
 
 					
 <?php $sql = "SELECT * from tbltourpackages order by rand() limit 4";
@@ -74,6 +74,7 @@ foreach($results as $result)
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
 					<h5>R <?php echo htmlentities($result->PackagePrice);?></h5>
 					<a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a>
+					<a href="http://localhost:5173/3D-art-gallery" class="view">Virtual Tour</a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -93,10 +94,10 @@ foreach($results as $result)
 	<div class="container">
 		<div class="col-md-4 routes-left wow fadeInRight animated" data-wow-delay=".5s">
 			<div class="rou-left">
-				<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
+				<a href="#"><i class="glyphicon glyphicon-list-alt" style="font-size: 50px;"></i></a>
 			</div>
 			<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
-				<h3>80000</h3>
+				<h3>3</h3>
 				<p>Enquiries</p>
 			</div>
 				<div class="clearfix"></div>
@@ -106,7 +107,7 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-user"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3>1900</h3>
+				<h3>8</h3>
 				<p>Registered users</p>
 			</div>
 				<div class="clearfix"></div>
@@ -116,7 +117,7 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-ticket"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3>7,00,00,000+</h3>
+				<h3>7</h3>
 				<p>Booking</p>
 			</div>
 				<div class="clearfix"></div>
